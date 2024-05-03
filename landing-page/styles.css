@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------- */
+
+.header, .footer {
+    height: 75px;
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ /* header */
+
+.logo, .links {
+    display: flex;
+    width: 700px;
+}
+
+.logo {
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    color: #E5E7EB;
+    justify-content: right;
+}
+
+.link-two, .link-three {
+    margin-left: 20px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-info {
+    color: white;
+}
+
+/* ----------------------------- */
+
+.website, .information, .quote {
+    height: 500px;
+}
+
+/* website */
+
+.website {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.website-info {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 300px;
+    text-align: left;
+}
+
+.website-title, .website-text, .website.button {
+    flex: 1 1 0;
+}
+
+.website-title {
+    font-family: "extra bold", serif;
+    font-size: 60px;
+    color: #F9FAF8;
+}
+
+.website-text {
+    font-family: "Roboto Slab", serif;
+    font-size: 26px;
+    color: #E5E7EB;
+}
+
+.button {
+    background-color: dodgerblue;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+.website-image {
+    display: flex;
+    width: 700px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+/* information */
+
+.information {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #1F2937;
+}
+
+.information-title {
+    margin: 20px;
+}
+
+.information-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-one, .image-two, .image-three, .image-four {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.image-one-placeholder, .image-two-placeholder, .image-three-placeholder, .image-four-placeholder {
+    height: 230px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: 3px dodgerblue solid;
+}
+
+/* quote */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+
+.quote-text {
+    width: 700px;
+    font-size: 36px;
+    text-align: left;
+    font-family: "light italic", serif;
+    color: #1F2937;
+}
+
+.quote-quoter {
+    text-align: right;
+    width: 700px;
+    font-size: 23px;
+    color: #1F2937;
+    font-family: "JetBrains Mono ExtraBold", serif;
+}
+
+/* product */
+
+.product {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-container {
+    width: 1200px;
+    height: 150px;
+    background-color: dodgerblue;
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info {
+    width: 800px;
+    margin: 10px;
+}
+
+.product-button {
+    background-color: dodgerblue;
+    height: 30px;
+    width: 100px;
+    color: white;
+    border: none;
+    outline: 2px solid white;
+    border-radius: 5px;
+}
