@@ -1,5 +1,5 @@
 
-const container = document.querySelector('#container');
+let container = document.querySelector('#container');
 // Step 1: Create a new <p> element
 const newParagraph = document.createElement('p');
 
