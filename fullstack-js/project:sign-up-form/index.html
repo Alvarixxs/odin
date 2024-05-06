@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign-up-form</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="blank"></div>
+    <div class="presentation">
+        <div class="logo">
+            <img src="resources/odin-lined.png" alt="odin logo">
+            <p>ODIN</p>
+        </div>
+        <div class="footer"><p>Photo by <a class="link" href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a class="link" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p></div>
+    </div>
+    <div class="content">
+        <div class="text">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up <em>now</em> to get started.</p>
+        </div>
+        <div class="text"><p>You <em>know</em> you want to.</p></div>
+        <form action="" method="post" class="form" id="form">
+            <div class="info">
+                <div class="title"><p>Let's do this!</p></div>
+
+                <div>
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" required minlength="4">
+                    </div>
+                    <div>
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" required minlength="4">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required minlength="4">
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" required minlength="4">
+                    </div>
+                </div>
+                <div>
+                    <div id="pass-div">
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" id="pass" required minlength="4">
+                    </div>
+                    <div>
+                        <label for="conf_pass">CONFIRM PASSWORD</label>
+                        <input type="password" id="conf_pass" required minlength="4">
+                    </div>
+                </div>
+            </div>
+            <div class="button" id="button"><button type="submit">Create Account</button></div>
+
+        </form>
+        <div class="log-in">
+            <p>Already have an account? <a class="log-in-link">Log in</a></p>
+        </div>
+    </div>
+    <div class="blank"></div>
+</div>
+
+</body>
+</html>
