@@ -349,3 +349,13 @@ button:focus {
 .projects > div:active {
     transform: scale(0.95) rotateZ(1.7deg);
 }
+
+.profile-options > button:hover {
+    background-color: white;
+    outline: 1px solid goldenrod;
+    color: black;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
