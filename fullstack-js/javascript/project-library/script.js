@@ -44,7 +44,7 @@ function setupRadio(book, div) {
     radioRead.setAttribute('id','radio-read')
     radioNotRead.setAttribute('id', 'radio-not-read')
     radioRead.setAttribute('name','book-read'+book.title.length);
-    radioNotRead.setAttribute('name','book-read'+book.title.length);
+    radioNotRead.setAttribute('name','book-read'+<book className="title length"></book>);
 
     labelRead.setAttribute('for','radio-read')
     labelNotRead.setAttribute('for','radio-not-read');
