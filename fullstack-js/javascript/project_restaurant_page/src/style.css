@@ -1,16 +1,157 @@
-@font-face {
-    font-family: 'MyFont';
-    src: url('my-font.woff') format('woff'), serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-button {
-    background-color: red;
+/* Reset and box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h {
-    color: #a16207;
-    font-size: 100px;
-    font-family: 'MyFont';
+body {
+    height: 1fr;
+    background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+header, #content {
+    background-image: linear-gradient(-10deg, #475569 0%, #2563eb 25%, #1e3a8a 50%, #4a044e 100%);
+    background-size: 200% 200%;
+    border-radius: 10px;
+}
+/* Header styling */
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin: 20px;
+}
+
+nav {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 20px;
+}
+
+.button-link, .cta {
+    margin: 40px;
+    background: none;
+    border: none;
+}
+
+/* Button styling */
+.button-link, .cta > span {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background: linear-gradient(to right, #ef4444, #fed1c7); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    transition: transform 0.2s ease-in-out; /* Smooth scaling  */
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+#arrow-horizontal {
+    fill: url(#SvgjsLinearGradient1011);
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #ef4444, #fed1c7);;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.button-link:hover {
+    opacity: 0.8;
+}
+
+.svg {
+    flex: 1 1 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* SVG styling */
+.svg > svg {
+    transform: scale(0.4);
+    fill: white;
+}
+
+#content {
+    height: 100%;
+    margin: 20px 400px;
+    padding: 60px 100px;
+}
+
+img {
+    border-radius: 10px;
+    border: 15px solid black;
+    height: auto;
+    align-self: center;
+}
+
+div > * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div > p {
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+    background-size: 180% 180%;
 }
